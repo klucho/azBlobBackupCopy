@@ -6,6 +6,7 @@ mount -o size=2G -t tmpfs none /blobfuseTemp
 if [ $? -ne 0 ]; then
     echo " [-] Failed to mount tmpfs."
     exit 6
+fi
 
 echo " [+] Mounting the blob storage account."
 /usr/bin/blobfuse2 mount /blobfuseMount --config-file=/Config/config.yaml --tmp-path=/blobfuseTemp
