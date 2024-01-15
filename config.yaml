@@ -1,0 +1,11 @@
+azstorage:
+  account-name: ACCOUNT
+  account-Key: StorageAccountkey==
+  container: CONTAINER
+  mode: Key
+  endpoint: https://ACCOUNT.blob.core.windows.net
+file_cache:
+  path: /mnt/test
+  timeout-sec: 120
+  max-size-mb: 1024
+
